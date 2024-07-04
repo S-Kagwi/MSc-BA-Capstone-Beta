@@ -46,7 +46,7 @@ model = load_model()
 
 # Function to get user input
 def get_user_input():
-    st.sidebar.header("Patient's Personal Information and Symptoms")
+    st.sidebar.header("User's Personal Information and Symptoms")
     
     age = st.sidebar.slider("What is your age?", min_value=0, max_value=100, step=1, key="age")
     gender = st.sidebar.radio("What is your gender?", ['Male', 'Female'], key="gender")
