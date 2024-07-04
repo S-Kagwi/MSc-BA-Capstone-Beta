@@ -43,10 +43,6 @@ st.markdown("""
         padding: 20px;
         margin: 10px;
     }
-    .product-card img {
-        width: 100%;
-        border-radius: 10px 10px 0 0;
-    }
     .product-card h3 {
         margin: 15px 0;
     }
@@ -124,22 +120,18 @@ def main():
     st.markdown("""
         <div class="product-card-container">
             <div class="product-card">
-                <alt="Lifestyle Management">
                 <h3>Lifestyle Management</h3>
                 <p>Learn about effective strategies to manage your lifestyle and reduce the risk of hypertension.</p>
             </div>
             <div class="product-card">
-                <img src="pic2.jpg" alt="Statistics">
                 <h3>Statistics</h3>
                 <p>Explore the latest statistics and data on hypertension prevalence and management.</p>
             </div>
             <div class="product-card">
-                <img src="pic3.jpg" alt="Partnerships">
                 <h3>Partnerships</h3>
                 <p>Discover our partnerships with healthcare providers and organizations.</p>
             </div>
             <div class="product-card">
-                <img src="pic4.jpg" alt="Funding">
                 <h3>Funding</h3>
                 <p>Find out about funding opportunities for hypertension research and initiatives.</p>
             </div>
