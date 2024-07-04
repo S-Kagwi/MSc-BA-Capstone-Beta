@@ -49,6 +49,25 @@ st.markdown("""
     .product-card p {
         color: #666;
     }
+    .user-profile-container {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+    }
+    .user-profile-button {
+        background-color: #8bc34a !important;  /* Light green */
+        color: white !important;
+        font-size: 20px !important;
+        padding: 10px 20px !important;
+        border-radius: 5px !important;
+        border: none !important;
+        cursor: pointer !important;
+        transition: background-color 0.3s ease !important;
+    }
+    .user-profile-button:hover {
+        background-color: #4caf50 !important;  /* Green */
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -99,6 +118,14 @@ def get_user_input():
 # Main function for Streamlit app
 def main():
     st.title("HyperPredict")
+    
+    # Add User Profile button at the top right
+    st.markdown("""
+        <div class="user-profile-container">
+            <button class="user-profile-button" onclick="window.location.href='#'">User Profile</button>
+        </div>
+    """, unsafe_allow_html=True)
+    
     st.write("This app predicts the likelihood of a user having hypertension based on various health and lifestyle factors.")
     st.image("pic.jpg", use_column_width=True)
     
