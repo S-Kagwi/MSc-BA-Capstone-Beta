@@ -50,10 +50,10 @@ st.markdown("""
         color: #666;
     }
     .user-profile-container {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 1000;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: -50px;
+        margin-right: 20px;
     }
     .user-profile-button {
         background-color: #8bc34a !important;  /* Light green */
