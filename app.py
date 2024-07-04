@@ -124,7 +124,7 @@ def main():
     st.markdown("""
         <div class="product-card-container">
             <div class="product-card">
-                <img src="pic1.jpg" alt="Lifestyle Management">
+                <alt="Lifestyle Management">
                 <h3>Lifestyle Management</h3>
                 <p>Learn about effective strategies to manage your lifestyle and reduce the risk of hypertension.</p>
             </div>
