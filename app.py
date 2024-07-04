@@ -6,7 +6,6 @@ import pickle
 st.set_page_config(page_title='Hypertension Prediction', page_icon='🩺', layout='wide')
 
 # Inline CSS for styling
-
 st.markdown("""
     <style>
     .reportview-container {
@@ -29,6 +28,30 @@ st.markdown("""
     .stButton>button:hover {
         background-color: #4caf50 !important;  /* Green */
     }
+    .product-card-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .product-card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 200px;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+    }
+    .product-card img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .product-card h3 {
+        margin: 15px 0;
+    }
+    .product-card p {
+        color: #666;
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -46,7 +69,7 @@ model = load_model()
 
 # Function to get user input
 def get_user_input():
-    st.sidebar.header("User's Personal Information and Symptoms")
+    st.sidebar.header("Patient's Personal Information and Symptoms")
     
     age = st.sidebar.slider("What is your age?", min_value=0, max_value=100, step=1, key="age")
     gender = st.sidebar.radio("What is your gender?", ['Male', 'Female'], key="gender")
@@ -95,6 +118,32 @@ def main():
                 st.success('The user is not likely to have hypertension.')
         else:
             st.error("Model not loaded correctly. Please try again later.")
+    
+    # Add the product cards
+    st.markdown("""
+        <div class="product-card-container">
+            <div class="product-card">
+                <img src="pic1.jpg" alt="Lifestyle Management">
+                <h3>Lifestyle Management</h3>
+                <p>Learn about effective strategies to manage your lifestyle and reduce the risk of hypertension.</p>
+            </div>
+            <div class="product-card">
+                <img src="pic2.jpg" alt="Statistics">
+                <h3>Statistics</h3>
+                <p>Explore the latest statistics and data on hypertension prevalence and management.</p>
+            </div>
+            <div class="product-card">
+                <img src="pic3.jpg" alt="Partnerships">
+                <h3>Partnerships</h3>
+                <p>Discover our partnerships with healthcare providers and organizations.</p>
+            </div>
+            <div class="product-card">
+                <img src="pic4.jpg" alt="Funding">
+                <h3>Funding</h3>
+                <p>Find out about funding opportunities for hypertension research and initiatives.</p>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()
