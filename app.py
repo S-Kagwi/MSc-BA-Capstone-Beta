@@ -35,7 +35,7 @@ st.markdown("""
         margin-top: 50px;
     }
     .product-card {
-        background-color: #f9f9f9;
+        background-color: #e0f7fa;  /* Light blue */
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         width: 200px;
@@ -45,15 +45,16 @@ st.markdown("""
     }
     .product-card h3 {
         margin: 15px 0;
+        color: #01579b;  /* Darker blue for the text */
     }
     .product-card p {
-        color: #666;
+        color: #01579b;  /* Darker blue for the text */
     }
     .user-profile-container {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: -50px;
-        margin-right: 20px;
+        position: fixed;
+        top: 40px;  /* Adjust this value to lower the button */
+        right: 10px;
+        z-index: 1000;
     }
     .user-profile-button {
         background-color: #8bc34a !important;  /* Light green */
