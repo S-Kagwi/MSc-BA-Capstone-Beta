@@ -127,7 +127,7 @@ def main():
         </div>
     """, unsafe_allow_html=True)
     
-    st.write("This app predicts the likelihood of a user having hypertension based on various health and lifestyle factors.")
+    st.write("This app predicts the likelihood of a user developing hypertension in the future, based on various health and lifestyle factors.")
     st.image("pic.jpg", use_column_width=True)
     
     input_features = get_user_input()
