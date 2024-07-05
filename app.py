@@ -138,9 +138,9 @@ def main():
             prediction = model.predict(input_df)
             
             if prediction[0] == 1:
-                st.success('There is an 80% probability of the user developing Hypertension.')
+                st.success('There is an 81% probability of the user developing Hypertension.')
             else:
-                st.success('There is an 80% probability of the user not developing Hypertension.')
+                st.success('There is an 81% probability of the user not developing Hypertension.')
         else:
             st.error("Model not loaded correctly. Please try again later.")
     
