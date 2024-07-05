@@ -148,18 +148,22 @@ def main():
     st.markdown("""
         <div class="product-card-container">
             <div class="product-card">
+                <img src="pic1.jpg" alt="Lifestyle Management Image">
                 <h3>Lifestyle Management</h3>
                 <p>Learn about effective strategies to manage your lifestyle and reduce the risk of hypertension.</p>
             </div>
             <div class="product-card">
+                    <img src="pic2.jpg" alt="Lifestyle Management Image">
                 <h3>Statistics</h3>
                 <p>Explore the latest statistics and data on hypertension prevalence and management.</p>
             </div>
             <div class="product-card">
+                    <img src="pic3.jpg" alt="Lifestyle Management Image">
                 <h3>Partnerships</h3>
                 <p>Discover our partnerships with healthcare providers and organizations.</p>
             </div>
             <div class="product-card">
+                    <img src="pic4.jpg" alt="Lifestyle Management Image">
                 <h3>Funding</h3>
                 <p>Find out about funding opportunities for hypertension research and initiatives.</p>
             </div>
